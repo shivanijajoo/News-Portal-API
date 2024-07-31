@@ -1,0 +1,249 @@
+/* src/pages/HomePage.css 
+.home-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .site-title {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .site-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .top-headlines {
+    margin-bottom: 40px;
+  }
+  
+  .top-headlines h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .about {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .about h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  } */
+  
+  /* src/pages/HomePage.css */
+/*.home-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer {
+    background-color: #282c34; /* Dark background color */
+    /*color: white;  White text color */
+   /* text-align: center; /* Center the text */
+   /* padding: 15px 20px; /* Padding around the text */
+   /* position: fixed; /* Fixed position at the bottom */
+    /*bottom: 0; /* Align to the bottom */
+    /*width: 100%; /* Full width */
+    /*box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    /*font-family: 'Roboto', sans-serif; /* Font for the footer text */
+  /*}
+  
+  /*.footer p {
+    margin: 0; /* Remove default margin */
+    /*font-size: 0.9rem; /* Font size */
+  /*}
+  
+  .footer a {
+    color: #61dafb; /* Link color */
+    /*text-decoration: none; /* Remove underline */
+    /*font-weight: bold; /* Bold links */
+ /* }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  /*}*/
+
+
+  /* src/pages/HomePage.css */
+
+/* src/pages/HomePage.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light grey background for the entire page */
+  }
+  
+  .header {
+    background-color: #ffffff; /* White background for the header */
+    border-bottom: 1px solid #ddd; /* Light grey border */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+    color:#ddd;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .navbar {
+    
+        display: flex;
+        gap: 50px;
+        margin-right: 100px;
+      }
+    
+  
+  
+  .navbar a {
+    text-decoration: none;
+    color:#ddd; /* Dark grey text color */
+    font-size: 1rem;
+  }
+  
+  .navbar a:hover {
+   text-decoration: underline;
+    
+  }
+  
+  .main-content {
+    padding: 70px 40px 20px; /* Adjusted top padding to account for fixed header */
+  }
+  
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .news-card {
+    background-color: #ffffff; /* White background for news cards */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .news-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-card-content {
+    padding: 15px;
+  }
+  
+  .news-card-title {
+    font-size: 1.5rem;
+    color: #333; /* Dark grey text color */
+    margin: 0 0 10px;
+  }
+  
+  .news-card-description {
+    font-size: 1rem;
+    color: #666; /* Medium grey text color */
+  }
+  
+  .footer {
+    background-color: #ffffff; /* White background for the footer */
+    border-top: 1px solid #ddd; /* Light grey border */
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #666; /* Medium grey text color */
+  }
+  
+  .footer a {
+    color: #333; /* Dark grey text color */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .news-list {
+      flex-direction: column;
+    }
+  
+    .news-card {
+      max-width: 100%;
+    }
+  }
